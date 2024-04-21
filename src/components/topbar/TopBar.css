@@ -1,0 +1,63 @@
+.topbar {
+  background-color: #eee;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.topbar__wrapper {
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar__left-logo {
+  color: rgb(25, 39, 90);
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  cursor: pointer;
+}
+.topbar__right {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.topbar__right-icons {
+  display: flex;
+  align-items: center;
+}
+
+.topbar__right-icon {
+  color: rgb(25, 39, 90);
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.topbar-icon {
+  margin-right: 15px;
+}
+.topIconBadge {
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  top: -7px;
+  right: 8px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.topbar__img {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+}
