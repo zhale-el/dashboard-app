@@ -1,9 +1,9 @@
 .sidebar {
   background-color: rgba(251, 251, 255);
-  position: fixed;
-  height: calc(100vh - 80px);
+  position: sticky;
+  height: calc(100vh - 60px);
   flex: 1;
-  top: 80px;
+  top: 40px;
 }
 .sidebar__wrapper {
   color: #555;
@@ -13,9 +13,10 @@
   margin-bottom: 10px;
 }
 .sidebar__title {
-  color: rgb(128, 130, 138);
-  font-size: 17px;
+  color: rgb(148, 149, 154);
+  font-size: 18px;
   padding-bottom: 10px;
+  opacity: 0.7;
 }
 .sidebar__list {
   list-style: none;
@@ -31,9 +32,9 @@
 }
 .sidebar__list-item.active,
 .sidebar__list-item:hover {
-  background-color: #eee;
+  background-color: #f8f7f7f5;
 }
 .sidebar__list-icon {
   font-size: 20px !important;
-  margin-right: 15px;
+  margin-right: 19px;
 }

@@ -12,6 +12,7 @@ import DynamicFeedIcon from "@mui/icons-material/DynamicFeed";
 import MessageOutlinedIcon from "@mui/icons-material/MessageOutlined";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
 import ReportIcon from "@mui/icons-material/Report";
+import { Link } from "react-router-dom";
 
 const SideBar = () => {
   return (
@@ -20,10 +21,13 @@ const SideBar = () => {
         <div className="sidebar__menu">
           <h3 className="sidebar__title">Dashboard</h3>
           <ul className="sidebar__list">
-            <li className="sidebar__list-item active">
-              <LineStyleIcon className="sidebar__list-icon" />
-              Home
-            </li>
+            <Link to="/" className="link">
+              <li className="sidebar__list-item active">
+                <LineStyleIcon className="sidebar__list-icon" />
+                Home
+              </li>
+            </Link>
+
             <li className="sidebar__list-item">
               <TimelineIcon className="sidebar__list-icon" />
               Analytics
@@ -38,18 +42,26 @@ const SideBar = () => {
         <div className="sidebar__menu">
           <h3 className="sidebar__title">Quick Menu</h3>
           <ul className="sidebar__list">
-            <li className="sidebar__list-item active">
-              <PermIdentityIcon className="sidebar__list-icon" />
-              Users
-            </li>
-            <li className="sidebar__list-item">
-              <PermIdentityIcon className="sidebar__list-icon" />
-              New User
-            </li>
-            <li className="sidebar__list-item">
-              <StorefrontIcon className="sidebar__list-icon" />
-              Products
-            </li>
+            <Link to="/users" className="link">
+              <li className="sidebar__list-item">
+                <PermIdentityIcon className="sidebar__list-icon" />
+                Users
+              </li>
+            </Link>
+            <Link to="/newuser" className="link">
+              <li className="sidebar__list-item">
+                <PermIdentityIcon className="sidebar__list-icon" />
+                New User
+              </li>
+            </Link>
+
+            <Link to="/products" className="link">
+              <li className="sidebar__list-item">
+                <StorefrontIcon className="sidebar__list-icon" />
+                Products
+              </li>
+            </Link>
+
             <li className="sidebar__list-item">
               <AttachMoneyIcon className="sidebar__list-icon" />
               Transactions
@@ -64,7 +76,7 @@ const SideBar = () => {
         <div className="sidebar__menu">
           <h3 className="sidebar__title">Notifications</h3>
           <ul className="sidebar__list">
-            <li className="sidebar__list-item active">
+            <li className="sidebar__list-item">
               <MailOutlineIcon className="sidebar__list-icon" />
               Mail
             </li>
@@ -82,7 +94,7 @@ const SideBar = () => {
         <div className="sidebar__menu">
           <h3 className="sidebar__title">Staff</h3>
           <ul className="sidebar__list">
-            <li className="sidebar__list-item active">
+            <li className="sidebar__list-item">
               <WorkOutlineIcon className="sidebar__list-icon" />
               Manage
             </li>

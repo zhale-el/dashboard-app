@@ -1,8 +1,8 @@
 .topbar {
-  background-color: #eee;
+  background-color: #ffffff;
   width: 100%;
-  height: 80px;
-  position: fixed;
+  height: 60px;
+  position: sticky;
   top: 0;
   z-index: 999;
 }
@@ -15,7 +15,7 @@
 }
 
 .topbar__left-logo {
-  color: rgb(25, 39, 90);
+  color: rgb(56, 69, 106);
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 6px;
