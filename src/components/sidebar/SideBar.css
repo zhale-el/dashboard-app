@@ -1,9 +1,9 @@
 .sidebar {
   background-color: rgba(251, 251, 255);
   position: sticky;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 50px);
   flex: 1;
-  top: 40px;
+  top: 50px;
 }
 .sidebar__wrapper {
   color: #555;
@@ -32,7 +32,7 @@
 }
 .sidebar__list-item.active,
 .sidebar__list-item:hover {
-  background-color: #f8f7f7f5;
+  background-color: #e8e6e6fd;
 }
 .sidebar__list-icon {
   font-size: 20px !important;
