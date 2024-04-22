@@ -52,7 +52,7 @@ let xAxisData = [
 const newMembers = [
   {
     id: 1,
-    username: "zhale Elmi",
+    username: "Zhale Elmi",
     title: "Web Developer",
   },
   {
@@ -72,4 +72,35 @@ const newMembers = [
   },
 ];
 
-export { xAxisData, newMembers };
+const transactions = [
+  {
+    id: 1,
+    customer: "Zhale Elmi",
+    date: "15 May 1995",
+    amount: 123,
+    status: "Approved",
+  },
+  {
+    id: 2,
+    customer: "Fateme Bahmani",
+    date: "23 Jul 2022",
+    amount: 123,
+    status: "Declined",
+  },
+  {
+    id: 3,
+    customer: "Frank Mosleh",
+    date: "28 May 2022",
+    amount: 123,
+    status: "Pending",
+  },
+  {
+    id: 4,
+    customer: "Elnaz Ghasemi",
+    date: "1 Feb 2022",
+    amount: 123,
+    status: "Approved",
+  },
+];
+
+export { xAxisData, newMembers, transactions };

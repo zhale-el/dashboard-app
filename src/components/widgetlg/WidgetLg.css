@@ -1,16 +1,64 @@
 .widgetlg {
+  flex: 2;
+  padding: 20px;
+  box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
 }
 .widgetlg__title {
+  color: #555;
+  font-size: 22px;
+  font-weight: 600;
+  margin-left: 15px;
 }
 .widgetlg__tabel {
+  width: 100%;
+  border-spacing: 20px;
+  text-align: center;
 }
-.widgetlg__tr {
-}
+
 .widgetlg__th {
+  color: #444;
 }
 .widgetlg__user {
+  display: flex;
+  align-items: center;
 }
 .widgetlg__img {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-right: 30px;
+}
+.widgetlg__name {
+  color: #555;
+  font-weight: 300;
+}
+.widgetlg__date,
+.widgetlg__amount {
+  color: #555;
+  font-weight: 300;
+}
+.widgetlg__button {
+  color: #444;
+  padding: 9px 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.widgetlg__button.Approved {
+  background-color: #e5faf2;
+  color: #3bb077;
+}
+
+.widgetlg__button.Declined {
+  background-color: #fff0f1;
+  color: #d95087;
+}
+
+.widgetlg__button.Pending {
+  background-color: #ebf1fe;
+  color: #2a7ade;
+}
+
+.widgetlg__status {
 }

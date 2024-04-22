@@ -5,9 +5,10 @@
   box-shadow: 0 0 15px -10px rgba(0, 0, 0, 0.75);
 }
 .widgetsm__title {
-  color: #444;
+  color: #555;
   font-size: 22px;
   font-weight: 600;
+  margin-left: 9px;
 }
 .widgetsm-list {
   list-style: none;
@@ -17,7 +18,7 @@
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  margin: 20px 0;
+  margin: 25px 0;
 }
 .widgetsm__img {
   width: 40px;
