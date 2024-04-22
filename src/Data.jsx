@@ -1,3 +1,5 @@
+import Avator from "./assets/images/user.svg";
+
 let xAxisData = [
   {
     name: "Jan",
@@ -103,4 +105,47 @@ const transactions = [
   },
 ];
 
-export { xAxisData, newMembers, transactions };
+let userRows = [
+  {
+    id: 1,
+    username: "Zhale Elmi",
+    avator: Avator,
+    status: "active",
+    transaction: "$129.52",
+    email: "Zhale@gmail.com",
+  },
+  {
+    id: 2,
+    username: "Farank Mosleh",
+    avator: Avator,
+    status: "non-active",
+    transaction: "$110",
+    email: "farank@gmail.com",
+  },
+  {
+    id: 3,
+    username: "Maryam Elmi",
+    avator: Avator,
+    status: "active",
+    transaction: "$98",
+    email: "elmi@gmail.com",
+  },
+  {
+    id: 4,
+    username: "Fateme Bahmani",
+    avator: Avator,
+    status: "active",
+    transaction: "$0",
+    email: "fateme@gmail.com",
+  },
+  {
+    id: 5,
+    username: "Elnaz Ghasemi",
+    avator: Avator,
+    status: "active",
+    transaction: "$55.98",
+    email: "elnaz@gmail.com",
+  },
+];
+
+export { xAxisData, newMembers, transactions, userRows };
