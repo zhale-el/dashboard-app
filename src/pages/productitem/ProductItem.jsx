@@ -4,7 +4,8 @@ import "./ProductItem.css";
 import Chart from "../../components/chart/Chart";
 import { productsData } from "../../Data";
 import productImage from "../../assets/images/laptop.jpg";
-
+import PublishIcon from "@mui/icons-material/Publish";
+import IpadImage from "../../assets/images/ipad.jpg";
 const ProductItem = () => {
   return (
     <div className="productitem">
@@ -59,7 +60,36 @@ const ProductItem = () => {
         </div>
       </div>
 
-      <div className="productitem-bottom"></div>
+      <div className="productitem-bottom">
+        <form className="productitem-form">
+          <div className="productitem-form__left">
+            <label>Product Name</label>
+            <input type="text" placeholder="Dell Laptop" />
+
+            <label>In Store</label>
+            <select id="instore">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+
+            <label>Active</label>
+            <select id="instore">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+          <div className="productitem-form__right">
+            <div className="productitem__uploader">
+              <img src={IpadImage} alt="" className="productitem-form__img" />
+              <label>
+                <PublishIcon className="productitem-form__icon" />
+              </label>
+              <input type="file" style={{ display: "none" }} />
+            </div>
+            <button className="productotem__edit">Upload (Edit)</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 };
