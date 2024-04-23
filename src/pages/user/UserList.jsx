@@ -82,7 +82,6 @@ const UserList = () => {
           },
         }}
         pageSizeOptions={[5]}
-        checkboxSelection
         disableRowSelectionOnClick
       />
     </div>

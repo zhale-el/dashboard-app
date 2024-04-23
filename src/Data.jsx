@@ -1,4 +1,8 @@
 import Avator from "./assets/images/user.svg";
+import Ipad from "./assets/images/ipad.jpg";
+import Laptop from "./assets/images/laptop.jpg";
+import Laptop2 from "./assets/images/laptop2.jpg";
+import macbook from "./assets/images/macbook.jpg";
 
 let xAxisData = [
   {
@@ -148,4 +152,53 @@ let userRows = [
   },
 ];
 
-export { xAxisData, newMembers, transactions, userRows };
+let products = [
+  {
+    id: 1,
+    title: "Asus",
+    avatar: Laptop2,
+    price: "$890",
+  },
+  {
+    id: 2,
+    title: "Acer",
+    avatar: Ipad,
+    price: "$760",
+  },
+  {
+    id: 3,
+    title: "HP",
+    avatar: Laptop,
+    price: "$995",
+  },
+  {
+    id: 4,
+    title: "Dell",
+    avatar: macbook,
+    price: "$369",
+  },
+];
+
+const productsData = [
+  {
+    name: "Jan",
+    sales: 4000,
+  },
+  {
+    name: "Feb",
+    sales: 3000,
+  },
+  {
+    name: "Mar",
+    sales: 5000,
+  },
+];
+
+export {
+  xAxisData,
+  newMembers,
+  transactions,
+  userRows,
+  products,
+  productsData,
+};

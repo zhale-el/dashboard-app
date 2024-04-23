@@ -14,7 +14,7 @@ const Chart = ({ title, data, datakey, grid }) => {
   return (
     <div className="chart">
       <h3 className="chart__title">{title}</h3>
-      <ResponsiveContainer width="100%" aspect={4}>
+      <ResponsiveContainer width="100%" aspect={5}>
         <LineChart data={data}>
           <XAxis dataKey="name" stroke="rgb(56, 69, 106)" />
           <Line type="monotone" dataKey={datakey} stroke="#5550bd" />
